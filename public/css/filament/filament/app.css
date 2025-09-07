@@ -1,0 +1,12 @@
+:root {
+  --color-primary-50: #fff1f0;
+  --color-primary-100: #ffc1b0;
+  --color-primary-200: #ffa38f;
+  --color-primary-300: #ff7866;
+  --color-primary-400: #ff5544;
+  --color-primary-500: #ff4d4f; /* main */
+  --color-primary-600: #e04344;
+  --color-primary-700: #a8071a; /* dark */
+  --color-primary-800: #870215;
+  --color-primary-900: #5c000f;
+}

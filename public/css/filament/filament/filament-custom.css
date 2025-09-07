@@ -1,0 +1,74 @@
+/* ======================
+   Theme Colors
+====================== */
+:root {
+    --color-primary-50: #fff1f0;
+    --color-primary-100: #ffc1b0;
+    --color-primary-500: #ff4d4f; /* main color */
+    --color-primary-700: #a8071a;
+}
+
+/* ======================
+   Navbar Styling
+====================== */
+header.filament-navbar {
+    background-color: var(--color-primary-500) !important;
+    color: white;
+}
+
+header.filament-navbar a {
+    color: white !important;
+    font-weight: 500;
+}
+
+header.filament-navbar a:hover {
+    color: #ffe6e6 !important;
+}
+
+/* Active resource tab */
+header.filament-navbar .filament-active {
+    border-bottom: 2px solid #ffe6e6;
+}
+
+/* Navbar brand/logo */
+header.filament-navbar .filament-navbar-brand img {
+    max-height: 40px;
+}
+
+/* ======================
+   Sidebar Styling
+====================== */
+aside.filament-sidebar {
+    background-color: #1e1e2f;
+    color: white;
+}
+
+aside.filament-sidebar a {
+    color: white;
+}
+
+aside.filament-sidebar a:hover {
+    background-color: var(--color-primary-600);
+}
+
+/* ======================
+   Buttons
+====================== */
+.filament-button-primary {
+    background-color: var(--color-primary-500);
+    border-color: var(--color-primary-500);
+}
+
+.filament-button-primary:hover {
+    background-color: var(--color-primary-700);
+}
+
+/* ======================
+   Forms & Inputs
+====================== */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-primary-500);
+    box-shadow: 0 0 0 1px var(--color-primary-300);
+}

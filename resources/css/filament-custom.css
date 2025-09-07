@@ -1,0 +1,84 @@
+/* =========================
+   Theme Colors (Primary)
+   ========================= */
+:root {
+    --color-primary-50: #fff1f0;
+    --color-primary-100: #ffc1b0;
+    --color-primary-200: #ffa38f;
+    --color-primary-300: #ff7866;
+    --color-primary-400: #ff5544;
+    --color-primary-500: #ff4d4f; /* main primary color */
+    --color-primary-600: #e04344;
+    --color-primary-700: #a8071a;
+    --color-primary-800: #870215;
+    --color-primary-900: #5c000f;
+
+    --color-secondary-500: #6b7280; /* optional */
+}
+
+/* =========================
+   Navbar Styling
+   ========================= */
+header.filament-navbar {
+    background-color: var(--color-primary-500);
+    color: white;
+}
+
+/* Navbar links */
+header.filament-navbar a {
+    color: white;
+    font-weight: 500;
+}
+
+header.filament-navbar a:hover {
+    color: #ffe6e6;
+}
+
+/* Active tab highlight */
+header.filament-navbar .filament-active {
+    border-bottom: 2px solid #ffe6e6;
+}
+
+/* Navbar brand/logo */
+header.filament-navbar .filament-navbar-brand img {
+    max-height: 40px;
+}
+
+/* =========================
+   Sidebar Styling
+   ========================= */
+aside.filament-sidebar {
+    background-color: #1e1e2f;
+    color: white;
+}
+
+aside.filament-sidebar a {
+    color: white;
+}
+
+aside.filament-sidebar a:hover {
+    background-color: var(--color-primary-600);
+}
+
+/* =========================
+   Tables & Buttons
+   ========================= */
+.filament-button-primary {
+    background-color: var(--color-primary-500);
+    border-color: var(--color-primary-500);
+}
+
+.filament-button-primary:hover {
+    background-color: var(--color-primary-700);
+    border-color: var(--color-primary-700);
+}
+
+/* =========================
+   Forms & Inputs
+   ========================= */
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--color-primary-500);
+    box-shadow: 0 0 0 1px var(--color-primary-300);
+}

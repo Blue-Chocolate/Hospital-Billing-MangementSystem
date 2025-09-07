@@ -1,0 +1,19 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+.fi-simple-layout {
+    @apply bg-cyan-50; /* Correct syntax */
+}
+
+.fi-simple-main {
+    @apply bg-emerald-500; /* Already correct */
+}
+.fi-topbar {
+    @apply bg-cyan-900; /* Choose any Tailwind color */
+    color: white; /* Text color for contrast */
+}
+
+body, .fi-body {
+    font-family: 'Roboto', sans-serif;
+}
