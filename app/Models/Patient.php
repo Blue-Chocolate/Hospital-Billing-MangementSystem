@@ -18,4 +18,8 @@ class Patient extends Model
     {
         return $this->hasMany(Appointment::class);
     }
+     public function files()
+     {
+    return $this->hasMany(PatientFile::class);
+     }
 }

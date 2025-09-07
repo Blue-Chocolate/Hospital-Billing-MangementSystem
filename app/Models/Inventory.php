@@ -13,7 +13,7 @@ class Inventory extends Model
 
     protected $casts = [
         'quantity' => 'integer',
-        'unit_price' => 'decimal:8,2',
+        'unit_price' => 'decimal:2',
         'low_stock_threshold' => 'integer',
     ];
 
@@ -23,4 +23,10 @@ class Inventory extends Model
             $this->notify(new \App\Notifications\LowStockNotification($this));
         }
     }
+    public function bills()
+{
+    return $this->belongsToMany(Bill::class, 'bill_inventory')
+                ->withPivot('quantity', 'cost')
+                ->withTimestamps();
+}
 }

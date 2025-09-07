@@ -22,7 +22,7 @@ export default {
     },
     borderRadius: {
       '4xl': '5rem',
-      lg: '50%',
+      lg: '15px',
     },
     colors: {
       cyan: {

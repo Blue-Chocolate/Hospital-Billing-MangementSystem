@@ -58,6 +58,12 @@
               ]);
           });
       }
+public function inventories()
+{
+    return $this->belongsToMany(Inventory::class, 'bill_inventory')
+                ->withPivot('quantity', 'cost')
+                ->withTimestamps();
+}
 
       public function patient(): BelongsTo
       {

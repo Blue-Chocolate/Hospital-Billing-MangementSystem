@@ -7,6 +7,8 @@ use APP\Services\GroqAnomalyDetector;
 use APP\Services\GroqGeneralService;
 use App\Services\GroqReadmissionPredictor;
 use App\Services\ShiftScheduler;
+use Illuminate\Support\Facades\View;
+
 
 
 
@@ -37,8 +39,15 @@ class AppServiceProvider extends ServiceProvider
     /**
      * Bootstrap any application services.
      */
-    public function boot(): void
-    {
-        //
-    }
+   public function boot(): void
+{
+    View::composer('vendor.filament.components.layouts.app', function ($view) {
+        $view->with('resources', [
+            ['label' => 'Products', 'url' => url('/admin/products')],
+            ['label' => 'Orders', 'url' => url('/admin/orders')],
+            ['label' => 'Customers', 'url' => url('/admin/customers')],
+        ]);
+    });
+}
+
 }
